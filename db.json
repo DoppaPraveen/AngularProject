@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "firstname": "praveen",
+      "lastname": "doppa",
+      "age": 34,
+      "id": 1
+    },
+    {
+      "firstname": "kiran",
+      "lastname": "kumar",
+      "age": "23",
+      "Gender": "male",
+      "id": 2
+    },
+    {
+      "firstname": "srikanth",
+      "lastname": "kumar",
+      "age": "25",
+      "Gender": "male",
+      "id": 3
+    },
+    {
+      "firstname": "satya",
+      "lastname": "guduru",
+      "age": "34",
+      "Gender": "male",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<p>userform works!</p>
+<h1></h1>
+
+<span>{{title}} </span>
+<div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name"
+       [(ngModel)]=user.firstname aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" [(ngModel)]=user.lastname aria-label="Last name">
+    </div>
+    <br>
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Age"
+     [(ngModel)]=user.age aria-label="Age">
+  </div>
+
+  <h3>Select gender</h3>
+
+  <div class="form-check">
+    <input class="form-check-input" [(ngModel)]=user.Gender 
+     value="male" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="male">male    </label>
+ </div>
+ 
+ <div class="form-check">
+    <input class="form-check-input" [(ngModel)]=user.Gender 
+     value="female" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="male">female </label>
+  </div>
+
+<button type="button" class="btn btn-success"(click)="save()">Success</
+    button>
+
+
+ <ol class="list-group list-group-numbered">
+<li *ngFor="let u of users" class="list-group-item">
+        <span>{{u.firstname }}</span>
+        <br> 
+        <span>{{u.lastname}}</span>
+        <br> 
+        <span>{{u.age}}</span> 
+        <br> 
+<span>{{u.Gender}}</span> 
+<br>
+<button type="button" style="margin-right:500 ;" class="btn btn-danger">Delete</button>
+      </li>
+    </ol>
