@@ -13,6 +13,10 @@ export class UserService {
   createUser(user:{ firstname:string;lastname:string,age:number,Gender:string}){
     return this.http.post(BASE_URL,user)
   }
+  deleteUser(user:any){
+return this.http.delete(BASE_URL,user.id)
+
+  }
 
   constructor( public http :HttpClient) { }
 }
